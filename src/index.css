@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #38bdf8;
+  --color-bg-dark: #1e1e1e;
+  --color-pane-dark: #252526;
+  --color-border-dark: #3e3e42;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  background-color: #1e1e1e;
+  color: #cccccc;
+  color-scheme: dark;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* FlexLayout VS Code Theme */
+.flexlayout__layout {
+  background: #1e1e1e !important;
+}
+
+.flexlayout__tabset {
+  background: #1e1e1e !important;
+}
+
+.flexlayout__tabset_header {
+  background: #2d2d30 !important;
+  border-bottom: 1px solid #3e3e42 !important;
+  box-shadow: none !important;
+}
+
+.flexlayout__tab_button {
+  background: transparent !important;
+  color: #969696 !important;
+  border-radius: 0 !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  padding: 6px 14px !important;
+  font-size: 11px !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-weight: 400 !important;
+  box-shadow: none !important;
+  border-right: 1px solid #3e3e42 !important;
+}
+
+.flexlayout__tab_button--selected {
+  background: #1e1e1e !important;
+  color: #ffffff !important;
+  border-top: 1px solid #38bdf8 !important;
+  border-bottom: none !important;
+}
+
+.flexlayout__tab_button:hover:not(.flexlayout__tab_button--selected) {
+  background: #2a2d2e !important;
+  color: #cccccc !important;
+}
+
+.flexlayout__border_left,
+.flexlayout__border_right,
+.flexlayout__border_top,
+.flexlayout__border_bottom {
+  background: #252526 !important;
+  border-right: 1px solid #3e3e42 !important;
+}
+
+.flexlayout__border_button {
+  color: #858585 !important;
+  padding: 6px 10px !important;
+  font-size: 11px !important;
+  border-radius: 0 !important;
+}
+
+.flexlayout__border_button--selected {
+  color: #ffffff !important;
+  background: #37373d !important;
+  border-left: 1px solid #38bdf8 !important;
+}
+
+.flexlayout__border_button:hover:not(.flexlayout__border_button--selected) {
+  background: #2a2d2e !important;
+  color: #cccccc !important;
+}
+
+.flexlayout__splitter {
+  background: #3e3e42 !important;
+  border: none !important;
+  width: 1px !important;
+}
+
+.flexlayout__splitter:hover,
+.flexlayout__splitter_drag {
+  background: #38bdf8 !important;
+}
+
+.flexlayout__tabset_maximized {
+  outline: 1px solid #38bdf8 !important;
+}
